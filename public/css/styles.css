@@ -2,17 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    background-color: #EAC926;
-}
-img{
+}img{
     max-width: 100%;
 }
+body{
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+}
+main{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+footer{
+    text-align: center;
+    margin: 25px;
+}
 .logoMercadoLiebre{
-    width: 20%;
+    width: 40%;
     padding: 15px;
 }
 .barraDeBusqueda__span{
@@ -72,4 +82,11 @@ img{
 .basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
     font-size: 16px;
 }
-
+.conTarjeta, .envioGratis, .seguridadDe, .copyright{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.conTarjeta i, .envioGratis i, .seguridadDe i{
+    font-size: 2em;
+    color: #1259c3;
+}
