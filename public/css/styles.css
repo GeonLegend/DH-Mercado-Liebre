@@ -1,11 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: #EAC926;
+}
+img{
+    max-width: 100%;
 }
 .logoMercadoLiebre{
     width: 20%;
@@ -23,7 +27,7 @@ body{
 .barraDeBusqueda__span-i{
     background-color: #fff;
     border: 1px solid #000;
-    width: 15px;
+    width: 18px;
     padding: 2px;
     display: block;
     text-align: center;
@@ -42,6 +46,20 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.fa-address-card, .fa-arrow-right-to-bracket, .fa-basket-shopping{
+    margin-left: 2px;
+}
+.burger-menu{
+    margin: 10px;
+    background-color: #1259c3;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    width: 38px;
+    margin: auto;
+    text-align: center;
+}
 .basadoEnTuUltimaVisita h3, .ofertas h3{
     font-size: 24px;
 }
@@ -54,6 +72,4 @@ body{
 .basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
     font-size: 16px;
 }
-.fa-address-card, .fa-arrow-right-to-bracket, .fa-basket-shopping{
-    margin-left: 2px;
-}
+
