@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #EAC926;
+}
+.logoMercadoLiebre{
+    width: 20%;
+    padding: 15px;
+}
+.barraDeBusqueda__span{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 150px;
+    padding: 2px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.barraDeBusqueda__span-i{
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 15px;
+    padding: 2px;
+    display: block;
+    text-align: center;
+    margin: 1px 0px 10px 10px;
+}
+.compraEn{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.navegador ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.basadoEnTuUltimaVisita h3, .ofertas h3{
+    font-size: 24px;
+}
+.basadoEnTuUltimaVisita__article-precio, .ofertas__article-precio{
+    font-size: 18px;
+}
+.basadoEnTuUltimaVisita__article-descuento, .ofertas__article-descuento{
+    font-size: 16px;
+}
+.basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
+    font-size: 16px;
+}
+.fa-address-card, .fa-arrow-right-to-bracket, .fa-basket-shopping{
+    margin-left: 2px;
+}
