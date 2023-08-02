@@ -28,14 +28,21 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    align-items: baseline;
+    align-items: center;
+    text-align: center;
 }
 .logoMercadoLiebre{
-    width: 40%;
+    width: 33%;
 }
 .compraEn{
     text-align: center;
     margin-top: 20px;
+    width: 33%;
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .navegador ul li a{
     text-decoration: none;
@@ -43,21 +50,32 @@ footer{
 }
 .navegador ul{
     list-style-type: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+}
+.navegador ul li{
+    margin: 20px;
+}
+.navegador .nav-1{
+    display: flex;
+    align-items: start;
+}
+.navegador .nav-2{
+    display: flex;
+    align-items: end;
 }
 .fa-address-card, .fa-arrow-right-to-bracket, .fa-basket-shopping{
     margin-left: 2px;
 }
 .barraDeBusqueda{
     position: relative;
+    width: 33%;
 }
 .barraDeBusqueda__Input{
     padding: 6px;
     border: 0;
     outline: none;
     border-radius: 5px 0 0 5px;
-    width: 85%;
+    width: 80%;
 }
 .barraDeBusqueda__Btn{
     background-color: #fff;
