@@ -36,16 +36,14 @@ footer{
     width: 150px;
     padding: 2px;
     display: inline-block;
-    margin-left: 10px;
+    margin: 0px 0px 15px 15px;
 }
 .barraDeBusqueda__span-i{
     background-color: #fff;
     border: 1px solid #000;
     width: 18px;
     padding: 2px;
-    display: block;
     text-align: center;
-    margin: 1px 0px 10px 10px;
 }
 .compraEn{
     text-align: center;
@@ -67,12 +65,18 @@ footer{
     margin: 10px;
     background-color: #1259c3;
     color: #fff;
-    padding: 10px;
+    padding: 8px;
     font-size: 20px;
     border-radius: 6px;
     width: 38px;
     margin: auto;
     text-align: center;
+    display: none;
+    margin-bottom: 15px;
+}
+.banner img{
+    width: 100%;
+    margin-bottom: -3px;
 }
 .basadoEnTuUltimaVisita h3, .ofertas h3{
     font-size: 24px;
@@ -117,6 +121,12 @@ footer{
     }
     body{
         box-shadow: none;
+    }
+    nav{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
     }
 }
 @media (min-width : 768px){
