@@ -81,7 +81,7 @@ footer{
 .basadoEnTuUltimaVisita h3, .ofertas h3{
     font-size: 24px;
 }
-.basadoEnTuUltimaVisita article, .ofertas__article{
+.basadoEnTuUltimaVisita__article, .ofertas__article{
     margin: 10px;
     background-color: #fff;
 }
@@ -89,23 +89,40 @@ footer{
     border: 1px solid #ebebeb;
     text-align: left;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
 }
 .basadoEnTuUltimaVisita__article div i, .ofertas__article div i{
-    color: #33bd58;
-    margin-bottom: 15px;
-    font-size: 15px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
 }
 .basadoEnTuUltimaVisita__article-precio, .ofertas__article-precio{
     font-size: 18px;
+    width: 30%;
+    margin-top: 15px;
 }
 .basadoEnTuUltimaVisita__article-descuento, .ofertas__article-descuento{
     font-size: 16px;
-    color: #33bd58;
+    color: #39b54a;
+    width: 70%;
 }
 .basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
     font-size: 16px;
-    margin-top: 15px;
     color: #666;
+    width: 100%;
+    margin-top: 15px;
 }
 .conTarjeta, .envioGratis, .seguridadDe, .copyright{
     margin-top: 20px;
