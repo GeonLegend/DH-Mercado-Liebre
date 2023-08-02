@@ -9,7 +9,6 @@
 body{
     font-size: 12px;
     background-color: #ebebeb;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 header{
     background-color: #EAC926;
@@ -25,29 +24,18 @@ footer{
     text-align: center;
     margin: 25px;
 }
+.initHeader{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: baseline;
+}
 .logoMercadoLiebre{
     width: 40%;
-    padding: 15px;
-}
-.barraDeBusqueda__span{
-    background-color: #fff;
-    border: 1px solid #000;
-    color: #666;
-    width: 150px;
-    padding: 2px;
-    display: inline-block;
-    margin: 0px 0px 15px 15px;
-}
-.barraDeBusqueda__span-i{
-    background-color: #fff;
-    border: 1px solid #000;
-    width: 18px;
-    padding: 2px;
-    text-align: center;
 }
 .compraEn{
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .navegador ul li a{
     text-decoration: none;
@@ -60,6 +48,25 @@ footer{
 }
 .fa-address-card, .fa-arrow-right-to-bracket, .fa-basket-shopping{
     margin-left: 2px;
+}
+.barraDeBusqueda{
+    position: relative;
+}
+.barraDeBusqueda__Input{
+    padding: 6px;
+    border: 0;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    width: 85%;
+}
+.barraDeBusqueda__Btn{
+    background-color: #fff;
+    color: #666;
+    padding: 6px;
+    position: absolute;
+    border: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
 }
 .burger-menu{
     margin: 10px;
@@ -78,12 +85,22 @@ footer{
     width: 100%;
     margin-bottom: -3px;
 }
+.basadoEnTuUltimaVisita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .basadoEnTuUltimaVisita h3, .ofertas h3{
     font-size: 24px;
+    width: 100%;
+    margin: 15px
 }
 .basadoEnTuUltimaVisita__article, .ofertas__article{
-    margin: 10px;
     background-color: #fff;
+    width: 38vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .basadoEnTuUltimaVisita__article div, .ofertas__article div{
     border: 1px solid #ebebeb;
@@ -117,6 +134,7 @@ footer{
     font-size: 16px;
     color: #39b54a;
     width: 70%;
+    text-align: center;
 }
 .basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
     font-size: 16px;
@@ -145,10 +163,24 @@ footer{
     .burger-menu{
         display: block;
     }
+    .ofertas__article, .basadoEnTuUltimaVisita__article{
+        width: 100%;
+    }
+    .logoMercadoLiebre{
+        width: 50%;
+    }
+    .barraDeBusqueda{
+        width: 50%;
+    }
+    .compraEn{
+        width: 100%;
+    }
 }
 @media (min-width : 768px){
-
+    
 }
 @media (min-width : 992px){
-
+    .ofertas__article, .basadoEnTuUltimaVisita__article{
+        width: 20vw;
+    }
 }
