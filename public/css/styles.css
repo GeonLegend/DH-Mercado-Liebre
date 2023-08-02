@@ -14,6 +14,9 @@ header{
     background-color: #EAC926;
 }
 main{
+    text-align: center;
+    width: 90%;
+    margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -73,14 +76,31 @@ footer{
 .basadoEnTuUltimaVisita h3, .ofertas h3{
     font-size: 24px;
 }
+.basadoEnTuUltimaVisita article, .ofertas__article{
+    margin: 10px;
+    background-color: #fff;
+}
+.basadoEnTuUltimaVisita__article div, .ofertas__article div{
+    border: 1px solid #ebebeb;
+    text-align: left;
+    padding: 15px;
+}
+.basadoEnTuUltimaVisita__article div i, .ofertas__article div i{
+    color: #33bd58;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
 .basadoEnTuUltimaVisita__article-precio, .ofertas__article-precio{
     font-size: 18px;
 }
 .basadoEnTuUltimaVisita__article-descuento, .ofertas__article-descuento{
     font-size: 16px;
+    color: #33bd58;
 }
 .basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
     font-size: 16px;
+    margin-top: 15px;
+    color: #666;
 }
 .conTarjeta, .envioGratis, .seguridadDe, .copyright{
     margin-top: 20px;
