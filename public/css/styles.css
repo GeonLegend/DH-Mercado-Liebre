@@ -23,6 +23,9 @@ main.home{
 footer{
     text-align: center;
     margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .initHeader{
     display: flex;
@@ -172,12 +175,16 @@ footer{
     visibility: hidden;
 }
 .conTarjeta, .envioGratis, .seguridadDe, .copyright{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px 0px 10px 0px;
+    width: 31%;
 }
 .conTarjeta i, .envioGratis i, .seguridadDe i{
     font-size: 2em;
     color: #1259c3;
+    transition: all 450ms;
+}
+.conTarjeta i:hover, .envioGratis i:hover, .seguridadDe i:hover{
+    color: #000;
 }
 form{
     margin: 20px;
@@ -286,6 +293,9 @@ form .form__radio input{
     }
     form .container{
         width: 90%;
+    }
+    .conTarjeta, .seguridadDe, .envioGratis, .copyright{
+        width: 100%;
     }
 }
 @media (min-width : 769px) and (max-width : 991px){
