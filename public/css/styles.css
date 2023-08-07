@@ -16,13 +16,11 @@ header{
 main.home{
     text-align: center;
     width: 90%;
+    text-align: center;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 footer{
     text-align: center;
-    margin: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -38,9 +36,27 @@ footer{
     width: 33%;
 }
 .compraEn{
-    text-align: center;
-    margin-top: 20px;
     width: 33%;
+}
+.barraDeBusqueda{
+    position: relative;
+    width: 33%;
+}
+.barraDeBusqueda__Input{
+    padding: 6px;
+    border: 0;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    width: 80%;
+}
+.barraDeBusqueda__Btn{
+    background-color: #fff;
+    color: #666;
+    padding: 6px;
+    position: absolute;
+    border: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
 }
 .navegador{
     display: flex;
@@ -69,26 +85,6 @@ footer{
 .fa-address-card, .fa-arrow-right-to-bracket, .fa-basket-shopping{
     margin-left: 2px;
 }
-.barraDeBusqueda{
-    position: relative;
-    width: 33%;
-}
-.barraDeBusqueda__Input{
-    padding: 6px;
-    border: 0;
-    outline: none;
-    border-radius: 5px 0 0 5px;
-    width: 80%;
-}
-.barraDeBusqueda__Btn{
-    background-color: #fff;
-    color: #666;
-    padding: 6px;
-    position: absolute;
-    border: 0;
-    margin: auto;
-    border-radius: 0 5px 5px 0;
-}
 .burger-menu{
     margin: 10px;
     background-color: #1259c3;
@@ -103,8 +99,8 @@ footer{
     margin-bottom: 15px;
 }
 .banner img{
-    width: 100%;
     margin-bottom: -3px;
+    width: 100%;
 }
 .basadoEnTuUltimaVisita, .ofertas{
     display: flex;
@@ -119,8 +115,7 @@ footer{
 .basadoEnTuUltimaVisita__article, .ofertas__article{
     background-color: #fff;
     width: 38vw;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0px 15px 0px;
     transition: all 450ms;
 }
 .basadoEnTuUltimaVisita__article:hover , .ofertas__article:hover{
@@ -139,7 +134,6 @@ footer{
     position: relative;
 }
 .basadoEnTuUltimaVisita__article div i, .ofertas__article div i{
-    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -186,25 +180,23 @@ footer{
 .conTarjeta i:hover, .envioGratis i:hover, .seguridadDe i:hover{
     color: #000;
 }
-form{
-    margin: 20px;
-}
 form .container{
     width: 50%;
     background-color: #979797;
     padding: 15px;
     border-radius: 10px;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 form .container__box{
     background-color: #ebebeb;
-    width: 95%;
     margin: auto;
     border-radius: 10px;
     padding: 15px;
 }
 form .logo__register{
-    width: 90%;
+    width: 70%;
     margin: auto;
     padding-bottom: 30px;
 }
@@ -214,14 +206,10 @@ form .form__register{
 }
 form .form__select input{
     width: 100%;
-    border: none;
     border-radius: 5px;
     padding: 5px;
     margin: 7px 0px 7px 0px;
     font-size: 16px;
-}
-form .form__register h2{
-    margin: 5px;
 }
 form .form__radio{
     display: flex;
@@ -233,11 +221,6 @@ form .form__radio{
 }
 form .form__radio input{
     margin: 0px 3px 0px 3px;
-}
-.form__image{
-    padding: 15px 0px 15px 0px;
-    font-size: 14px;
-    width: 100%;
 }
 .form__btns{
     text-align: center;
@@ -270,9 +253,6 @@ form .form__radio input{
     .basadoEnTuUltimaVisita__article div, .ofertas__article div{
         display: none;
     }
-    body{
-        box-shadow: none;
-    }
     nav ul li{
         display: none;
     }
@@ -282,20 +262,14 @@ form .form__radio input{
     .ofertas__article, .basadoEnTuUltimaVisita__article{
         width: 100%;
     }
-    .logoMercadoLiebre{
+    .logoMercadoLiebre, .barraDeBusqueda{
         width: 50%;
     }
-    .barraDeBusqueda{
-        width: 50%;
-    }
-    .compraEn{
+    .compraEn, .conTarjeta, .envioGratis, .copyright, .seguridadDe{
         width: 100%;
     }
     form .container{
         width: 90%;
-    }
-    .conTarjeta, .seguridadDe, .envioGratis, .copyright{
-        width: 100%;
     }
 }
 @media (min-width : 769px) and (max-width : 991px){
