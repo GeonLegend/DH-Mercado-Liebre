@@ -13,7 +13,7 @@ body{
 header{
     background-color: #EAC926;
 }
-main{
+main.home{
     text-align: center;
     width: 90%;
     margin: auto;
@@ -168,6 +168,81 @@ footer{
     font-size: 2em;
     color: #1259c3;
 }
+form{
+    margin: 20px;
+}
+form .container{
+    width: 50%;
+    background-color: #979797;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+form .container__box{
+    background-color: #ebebeb;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+form .logo__register{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+form .form__register{
+    width: 80%;
+    margin: auto;
+}
+form .form__select input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 7px 0px 7px 0px;
+    font-size: 16px;
+}
+form .form__register h2{
+    margin: 5px;
+}
+form .form__radio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    font-size: 15px;
+    color: #666;
+}
+form .form__radio input{
+    margin: 0px 3px 0px 3px;
+}
+.form__image{
+    padding: 15px 0px 15px 0px;
+    font-size: 14px;
+    width: 100%;
+}
+.form__btns{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+.form__btns div input{
+    margin: 0px 10px 0px 10px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn__login{
+    text-align: center;
+}
+.btn__login input{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    font-size: 15px;
+}
 @media (max-width : 768px){
     .basadoEnTuUltimaVisita__article div, .ofertas__article div{
         display: none;
@@ -193,9 +268,14 @@ footer{
     .compraEn{
         width: 100%;
     }
+    form .container{
+        width: 90%;
+    }
 }
-@media (min-width : 768px){
-    
+@media (min-width : 769px) and (max-width : 991px){
+    form .container{
+        width: 60%;
+    }
 }
 @media (min-width : 992px){
     .ofertas__article, .basadoEnTuUltimaVisita__article{

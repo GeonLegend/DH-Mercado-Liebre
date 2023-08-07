@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f7ce8fc261.js" crossorigin="anonymous"></script>
+    <script src="/js/scrypts.js"></script>
 </head>
 <body>
     <header>
@@ -49,51 +50,39 @@
         </div>
     </header>
     <main>
-        <form action="/registro" method="post" class="form__register">
-            <div>
-                <input type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre" class="register__nya">
-            </div>
-            <div>
-                <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre de Usuario" class="register__na"></label>
-            </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="E-mail" class="register__email"></label>
-            </div>
-            <div>
-                <p>Fecha de Nacimiento</p>
-                <input type="date"" name="fecha" id="fecha" class="register__fecha">
-            </div>
-            <div>
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="register__domicilio">
-            </div>
-            <div>
-                <p>Perfil de Usuario</p>
-                <label><input type="radio" name="comprador" id="comprador" class="register__comprador" value="Comprador">Comprador</label>
-                <label><input type="radio" name="vendedor" id="vendedor" class="register__vendedor" value="Vendedor">Vendedor</label>
-            </div>
-            <div>
-                <p>Intereses</p>
-                <div>
-                    <div><input type="checkbox" name="categoria" value="Electro" class="register__jugueteria">Electro</div>
-                    <div><input type="checkbox" name="categoria" value="Moda" class="register__moda">Moda</div>
-                    <div><input type="checkbox" name="categoria" value="Hogar" class="register__hogar">Hogar</div>
-                    <div><input type="checkbox" name="categoria" value="Jugueteria" class="register__jugueteria">Juguetería</div>
-                    <div><input type="checkbox" name="categoria" value="Vida Sana" class="register__vs">Vida Sana</div>
+        <form action="/register" method="post">
+            <div class="container">
+                <div class="container__box">
+                <div class="logo__register"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"></div>
+                <div class="form__register">
+                    <div class="form__select"><input type="text" placeholder="Nombre" required oninput="check__name(this)"></span></span></div>
+                    <div class="form__select"><input type="text" placeholder="Nombre de Usuario" required oninput="check__name(this)"></div>
+                    <div class="form__select"><input type="email" placeholder="E-mail" required></div>
+                    <div><h2>Fecha de Nacimiento</h2></div>
+                    <div class="form__select"><input type="date" name="calendario" id="calendario" required></div>
+                    <div class="form__select"><input type="text" placeholder="Domicilio" required oninput="check__dom(this)"></div>
+                    <div><h2>Perfil de Usuario</h2></div>
+                    <div class="form__radio">
+                        <div><input type="radio" value="Comprador" name="opcion" required>Comprador</div>
+                        <div><input type="radio" value="Vendedor" name="opcion" required>Vendedor</div>
+                    </div>
+                    <div><h2>Intereses</h2></div>
+                    <div class="form__radio">
+                        <div><input type="checkbox" value="Electro">Electro</div>
+                        <div><input type="checkbox" value="Moda">Moda</div>
+                        <div><input type="checkbox" value="Hogar">Hogar</div>
+                        <div><input type="checkbox" value="Jueguetería">Juguetería</div>
+                        <div><input type="checkbox" value="Vida Sana">Vida Sana</div>
+                    </div>
+                    <div><h2>Foto de Usuario</h2></div>
+                    <div><input type="file" accept=".jpg .jpeg" class="form__image"></div>
+                    <div class="form__select"><input type="password" placeholder="Contraseña" required oninput="check__password(this)"></div>
+                    <div class="form__select"><input type="password" placeholder="Confirmar Contraseña" required oninput="check__repassword(this)"></div>
+                    <div class="form__btns">
+                        <div><input type="submit" value="Enviar" class="form__btn"></div>
+                        <div><input type="reset" value="Borrar" class="form__btn"></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p>Imagen de Usuario</p>
-                <input type="file" name="image" id="image" class="register__image" accept=".jpg">
-            </div>
-            <div>
-                <input type="password" name="contraseña" id="contraseña" class="register__contraseña" placeholder="Contraseña">
-            </div>
-            <div>
-                <input type="password" name="contraseña" id="contraseña" class="register__cc" placeholder="Confirmar Contraseña">
-            </div>
-            <div>
-                <input type="submit" value="Enviar" class="register__send">
-                <input type="reset" value="Borrar" class="register__reset">
             </div>
         </form>
     </main>
@@ -117,5 +106,39 @@
             <p>Copyright © 1999-2023 MercadoLiebre S.R.L.</p>  
         </section>
     </footer>
+    <script>
+        function check__name(input){
+    if(input.value.length < 2){
+        input.setCustomValidity('Su nombre debe tener al menos 2 carácteres')
+    }
+    else{
+        input.setCustomValidity('')
+    }
+}
+function check__dom(input){
+    if(input.value.length < 5){
+        input.setCustomValidity('Por favor insertar un domicilio válido, al menos 5 carácteres')
+    }
+    else{
+        input.setCustomValidity('')
+    }
+}
+function check__password(input){
+    if(input.value.length <= 8){
+        input.setCustomValidity('Su contraseña debe tener al menos 8 carácteres')
+    }
+    else{
+        input.setCustomValidity('')
+    }
+}
+function check__repassword(input){
+    if(input.value.length != check__password(input)){
+        input.setCustomValidity('Sus contraseñas no coinciden')
+    }
+    else{
+        input.setCustomValidity('')
+    }
+}
+    </script>
 </body>
 </html>
