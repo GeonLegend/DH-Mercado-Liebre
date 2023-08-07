@@ -118,7 +118,13 @@ footer{
     width: 38vw;
     margin-top: 15px;
     margin-bottom: 15px;
+    transition: all 450ms;
+}
+.basadoEnTuUltimaVisita__article:hover , .ofertas__article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .basadoEnTuUltimaVisita__article-descripcion, .ofertas__article-descripcion{
+        visibility: visible;
+    }
 }
 .basadoEnTuUltimaVisita__article div, .ofertas__article div{
     border: 1px solid #ebebeb;
@@ -142,6 +148,10 @@ footer{
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: transform 450ms;
+}
+.basadoEnTuUltimaVisita__article div i:hover, .ofertas__article div i:hover{
+    transform: rotate(-90deg);
 }
 .basadoEnTuUltimaVisita__article-precio, .ofertas__article-precio{
     font-size: 18px;
@@ -159,6 +169,7 @@ footer{
     color: #666;
     width: 100%;
     margin-top: 15px;
+    visibility: hidden;
 }
 .conTarjeta, .envioGratis, .seguridadDe, .copyright{
     margin-top: 20px;
